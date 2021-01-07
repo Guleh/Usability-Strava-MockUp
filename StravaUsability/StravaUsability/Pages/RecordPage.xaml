@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StravaUsability.Pages.RecordPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="&#9776;" Icon="baselinehomeblue48.png" Order="Primary" Priority="1"/>
+    </ContentPage.ToolbarItems>
+    <Grid>
+        <Grid.RowDefinitions>
+        </Grid.RowDefinitions>
+        <Frame Grid.Row="0" 
+               HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand">
+            <Image Source="screenshot2.jpg"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   Aspect="AspectFit"/>
+        </Frame>
+        <StackLayout>
+            <Button
+                        Command="{Binding StartCommand}"
+                        VerticalOptions="EndAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        CornerRadius="50"
+                        HeightRequest="100"
+                        WidthRequest="100"
+                        BorderWidth="20"
+                        BackgroundColor="Transparent"
+                        FontSize="Title"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

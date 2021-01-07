@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StravaUsability.Pages.FeedPage"
+             Title="Feed">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="&#9776;" Icon="baselinehomeblue48.png" Order="Primary" Priority="1"/>
+    </ContentPage.ToolbarItems>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <StackLayout>
+            <Image Source="screenshot.jpg"
+                   Aspect="AspectFill"/>
+
+        </StackLayout>
+        <StackLayout Grid.Row="1">
+            <Button
+                        Command="{Binding RecordCommand}"
+                        VerticalOptions="StartAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        CornerRadius="50"
+                        HeightRequest="100"
+                        WidthRequest="100"
+                        BorderColor="#ff5400"
+                        BorderWidth="20"
+                        BackgroundColor="White"
+                        FontSize="17"
+                Text="Start"
+                TextColor="#ff5400"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
